@@ -1,11 +1,11 @@
 import os
 import shutil
 import sys
-from distutils.command.build_ext import build_ext
-from distutils.core import Distribution, Extension
 
-from Cython.Build import cythonize
 import numpy as np
+from Cython.Build import cythonize
+from setuptools import Distribution, Extension
+from setuptools.command.build_ext import build_ext
 
 compile_args = ["-O3"]
 link_args = []
@@ -36,7 +36,7 @@ def build():
     )
 
     distribution = Distribution({"name": "extended", "ext_modules": ext_modules})
-    distribution.package_dir = "extended"
+    distribution.package_dir = {"":"extended"}
 
     cmd = build_ext(distribution)
     cmd.ensure_finalized()
