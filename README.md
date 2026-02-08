@@ -17,3 +17,10 @@ For fastest understanding, [view the IPython notebook demo tutorial](https://git
 This is an admittedly small project. Still, if you have any contributions, 
 please [fork this project on github](https://github.com/zillionare/ZigZag) and
 send me a pull request.
+
+## Release History
+
+* 0.4.0
+    * Add support for numpy 2.0.0
+* 0.3.5
+    * Initial release
