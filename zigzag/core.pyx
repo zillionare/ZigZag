@@ -4,8 +4,9 @@ from numpy cimport ndarray, int64_t
 
 
 
-DEF PEAK = 1
-DEF VALLEY = -1
+cdef enum:
+    PEAK = 1
+    VALLEY = -1
 
 
 @cython.boundscheck(False)

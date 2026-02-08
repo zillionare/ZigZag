@@ -1,7 +1,7 @@
 [build-system]
 requires = [
     "poetry-core>=1.0.0",
-    "Cython>=0.29",
+    "Cython>=3.0.0",
     "numpy >=2.0.0",
     "setuptools"
 ]
@@ -9,7 +9,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "zigzag-reload"
-version = "0.4.0"
+version = "0.4.1"
 readme = "README.md"
 homepage = "https://github.com/zillionare/ZigZag"
 repository = "https://github.com/zillionare/ZigZag"
@@ -26,7 +26,7 @@ include = [
 
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.13"
+python = ">=3.10,<3.14"
 Cython = ">=0.29"
 numpy = "^2.0.0"
 
